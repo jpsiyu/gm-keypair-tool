@@ -46,5 +46,6 @@ func main() {
 		return
 	}
 
-	fmt.Println("")
+	fmt.Println("程序运行结束")
+	reader.ReadString('\n')
 }

@@ -17,7 +17,7 @@ func CreateSeed() error {
 	result := res.Result.(map[string]interface{})
 	seed := result["seed"].(string)
 	fmt.Printf("生成种子：%s\n", seed)
-	fmt.Print("请输入密码：")
+	fmt.Print("初始化密码(8位以上，包含字母数字)：")
 	reader := bufio.NewReader(os.Stdin)
 	input, _ := reader.ReadString('\n')
 	input = strings.TrimRight(input, "\n")
